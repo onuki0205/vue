@@ -7,18 +7,10 @@
 
     <div id="app">
         <p>
-            {{ message }}
+            {{ items[0].name }}: {{items[0].price}} * {{items[0].quantity}}
         </p>
     </div>
-    <script>
-        console.assert(typeof Vue !== 'undefined');
-        new Vue({
-            el: '#app',
-            data: {
-                message:'hello!'
-            }
-        });
-    </script>
+    <script src = "app.js"></script>
 </head>
 <body>
 
